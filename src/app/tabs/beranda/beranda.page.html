@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>beranda</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="keluar()">
+        <ion-icon slot="start" name="log-out-outline"></ion-icon>
+        Log Out
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <swiper-container #swiper slides-per-view="3" speed="500" loop="true" css-mode="true" [pagination]="true">
+    <swiper-slide>
+      <div class="swiper-zoom-container">
+      <img src="https://cdn.pixabay.com/photo/2016/11/29/08/41/apple-1868496_1280.jpg" height="200">
+    </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="swiper-zoom-container">
+      <img src="https://cdn.pixabay.com/photo/2014/09/24/14/29/macbook-459196_1280.jpg" height="200">
+    </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="swiper-zoom-container">
+      <img src="https://cdn.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" height="200">
+    </div>
+    </swiper-slide>
+  </swiper-container>
+</ion-content>
